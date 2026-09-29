@@ -1,0 +1,6 @@
+{
+  "name": "CloudPocket VM",
+  "description": "Ultra-lightweight thin client for cloud-based virtual computers and ChromiumOS/Linux environments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

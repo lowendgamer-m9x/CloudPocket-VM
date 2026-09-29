@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  cloudpocket-vm:
+    build: .
+    image: cloudpocket-vm:latest
+    container_name: cloudpocket_cloud_vm
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - CPVM_AUTH_TOKEN=cpvm_demo_token_sec
+      - SCREEN_WIDTH=854
+      - SCREEN_HEIGHT=480
+      - SCREEN_DEPTH=16
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+          cpus: '1.0'
